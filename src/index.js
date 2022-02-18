@@ -48,7 +48,7 @@ async function sendData(url, method, data) {
 
 function toggleToyForm() {
     state.displayToyForm = !state.displayToyForm;
-    state.displayToyForm ? (newtoyFormEl.style.display = 'block') : (newtoyFormEl.style.display = 'none');
+    newtoyFormEl.style.display = state.displayToyForm ? 'block' : 'none';
 }
 
 function createToyElement(toy) {
